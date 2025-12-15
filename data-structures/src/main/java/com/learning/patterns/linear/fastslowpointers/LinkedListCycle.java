@@ -18,8 +18,6 @@ import com.learning.utils.LinkedListHelper;
  * constant multiple of n.
  * Space complexity: O(1).
  *
- * <p>Common use: this is the standard approach for problems like LeetCode
- * "Linked List Cycle" (141).
  */
 public class LinkedListCycle {
 

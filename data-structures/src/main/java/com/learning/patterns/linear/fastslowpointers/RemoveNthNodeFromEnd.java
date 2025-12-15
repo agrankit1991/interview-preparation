@@ -14,7 +14,8 @@ import com.learning.utils.LinkedListHelper;
  *   will be positioned right before the node to remove.</li>
  * </ul>
  *
- * Time complexity: O(n). Space complexity: O(1).
+ * Time complexity: O(n).
+ * Space complexity: O(1).
  */
 public class RemoveNthNodeFromEnd {
 

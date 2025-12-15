@@ -15,9 +15,9 @@ import com.learning.utils.LinkedListHelper;
  *       advance both one step at a time until they meet at the cycle entry.</li>
  * </ul>
  *
- * Time complexity: O(n). Space complexity: O(1).
+ * Time complexity: O(n).
+ * Space complexity: O(1).
  *
- * <p>Common use: LeetCode "Linked List Cycle II" (142) — find entry point.
  */
 public class LinkedListCycleII {
 
