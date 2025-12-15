@@ -5,7 +5,17 @@ import com.learning.utils.LinkedListHelper;
 
 /**
  * Finds the middle element of a singly linked list using the fast-and-slow
- * pointer technique.
+ * pointer technique (fast & slow pointers).
+ *
+ * <p>Algorithm summary:
+ * <ul>
+ *   <li>Advance <em>fast</em> by two steps and <em>slow</em> by one step.</li>
+ *   <li>When <em>fast</em> reaches the end, <em>slow</em> will be at the middle.</li>
+ * </ul>
+ *
+ * Time complexity: O(n) — each pointer advances through the list at most a
+ * constant multiple of n.
+ * Space complexity: O(1).
  */
 public class MiddleOfLinkedList {
 
@@ -16,6 +26,9 @@ public class MiddleOfLinkedList {
      *
      * @param head the head node of the linked list; may be {@code null}
      * @return the data value of the middle node, or {@code -1} if {@code head} is {@code null}
+     *
+     * @implNote This method runs in O(n) time and O(1) extra space. It is safe
+     * when {@code head} is {@code null} (returns {@code -1}).
      */
     public int getMiddle(final Node head) {
         if (head == null) {
