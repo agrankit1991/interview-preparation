@@ -23,16 +23,9 @@ This page collects major fast/slow-pointer (tortoise & hare) and related two-poi
 - **Find the Duplicate Number** (array with values in range) — Medium: treat values as pointers and use cycle detection. Implementation: [FindDuplicateNumber.java](FindDuplicateNumber.java)
 - **Circular Array Loop** — Medium: detect cycle under direction constraints. Implementation: [CircularArrayLoop.java](CircularArrayLoop.java)
 
-## Two-Pointer Variants (Related Techniques)
-- **Two Sum II - Input array is sorted** — Easy: classic two-pointer convergence. Implementation: [TwoSumII.java](TwoSumII.java)
-- **Container With Most Water** — Medium: shrink pointers to maximize area. Implementation: [ContainerWithMostWater.java](ContainerWithMostWater.java)
-- **Trapping Rain Water (two-pointer solution)** — Hard: optimize height scanning with two pointers. Implementation: [TrappingRainWater.java](TrappingRainWater.java)
-
 ## Notes & When to Use
 - Use fast/slow (Floyd) when you need to detect cycles or reason about repeating sequences.
 - Use two-pointer convergence/divergence when scanning from both ends, searching for pairs, or maintaining fixed gaps (e.g., nth-from-end).
 - Common follow-ups: prove correctness, analyze time/space, adapt to constraints (immutable nodes, limited passes).
 
 ---
-
-If you'd like, I can add links to canonical problems (e.g., LeetCode numbers), sample solutions in `java`, or brief diagrams for each pattern.
