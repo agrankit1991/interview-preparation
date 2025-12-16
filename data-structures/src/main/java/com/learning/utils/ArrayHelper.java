@@ -17,13 +17,42 @@ public class ArrayHelper {
 	 */
 	public static void printArray(int[] arr) {
 		if (arr == null) {
-			System.out.println("null");
+			System.out.println("[ ]");
 			return;
 		}
 		System.out.print("[");
 		for (int i = 0; i < arr.length; i++) {
 			System.out.print(arr[i]);
 			if (i + 1 < arr.length) System.out.print(", ");
+		}
+		System.out.println("]");
+	}
+
+	/**
+	 * Prints values from {@code arr} at the given {@code indices} in a compact
+	 * array form (e.g. [a, b]). If {@code arr} or {@code indices} is {@code null}
+	 * or any index is out of bounds the method prints {@code []}.
+	 *
+	 * @param arr source array to read values from
+	 * @param indices indices to pick from {@code arr}
+	 */
+	public static void printArrayAtIndices(int[] arr, int[] indices) {
+		if (arr == null || indices == null) {
+			System.out.println("[ ]");
+			return;
+		}
+
+		for (int idx : indices) {
+			if (idx < 0 || idx >= arr.length) {
+				System.out.println("null");
+				return;
+			}
+		}
+
+		System.out.print("[");
+		for (int i = 0; i < indices.length; i++) {
+			System.out.print(arr[indices[i]]);
+			if (i + 1 < indices.length) System.out.print(", ");
 		}
 		System.out.println("]");
 	}
